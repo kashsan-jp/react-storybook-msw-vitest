@@ -12,6 +12,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "msw-storybook-addon": "^2.0.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -22,6 +23,7 @@
     "@storybook/addon-interactions": "^8.4.7",
     "@storybook/addon-onboarding": "^8.4.7",
     "@storybook/blocks": "^8.4.7",
+    "@storybook/builder-vite": "^8.4.7",
     "@storybook/react": "^8.4.7",
     "@storybook/react-vite": "^8.4.7",
     "@storybook/test": "^8.4.7",
@@ -41,6 +43,11 @@
   "eslintConfig": {
     "extends": [
       "plugin:storybook/recommended"
+    ]
+  }, 
+  "msw": {
+    "workerDirectory": [
+      "public"
     ]
   }
 }
